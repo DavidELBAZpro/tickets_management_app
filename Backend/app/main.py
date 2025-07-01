@@ -4,6 +4,7 @@ from os.path import join
 import sys
 from pathlib import Path
 from contextlib import asynccontextmanager
+from fastapi.middleware.cors import CORSMiddleware
 
 
 # Append root dir path to the sys path so that imports are correctly working no matters from where the app is run.
@@ -65,6 +66,13 @@ app = FastAPI(lifespan=lifespan)
 # Routes
 app.include_router(default_router)
 app.include_router(ticket_router)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:8080"], 
+    allow_credentials=True,
+    allow_methods=["*"], 
+    allow_headers=["*"],
+)
 
 if __name__ == "__main__":
     setup_app()
