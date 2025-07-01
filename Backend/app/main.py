@@ -68,7 +68,7 @@ app.include_router(default_router)
 app.include_router(ticket_router)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:8080", "https://tickets-management-app-frontend.onrender.com", "https://tickets-management-app-v1.vercel.app"], 
+    allow_origins=["http://localhost:8080", "https://tickets-management-app-mi1i-o0sprmpl7-davidelbazpros-projects.vercel.app"], 
     allow_credentials=True,
     allow_methods=["*"], 
     allow_headers=["*"],
