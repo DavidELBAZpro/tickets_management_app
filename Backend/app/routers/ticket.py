@@ -8,7 +8,7 @@ from app.schemas.ticket import TicketCreate, TicketRead, TicketUpdate
 from app.database import get_session
 import app.crud.ticket as ticket_crud
 
-router = APIRouter(tags=["tickets"], prefix="/v1")
+router = APIRouter(tags=["tickets_management"], prefix="/v1")
 
 logger = logging.getLogger(__name__)
 
