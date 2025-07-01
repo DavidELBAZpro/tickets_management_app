@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: ./Backend
+      dockerfile: Dockerfile
+    container_name: ticket-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./Backend/ticket_mgmt.env
+    volumes:
+      - ./Backend/app:/ticket_mgmt/app
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./Frontend
+      dockerfile: Dockerfile
+    container_name: ticket-frontend
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
