@@ -40,6 +40,7 @@ const TicketCard = ({ ticket, onClose, onDelete }: TicketCardProps) => {
             </span>
           </div>
           <p className="text-gray-600 mb-3 line-clamp-2">{ticket.description}</p>
+          <p className="text-gray-400 mb-10 line-clamp-2">ID: {ticket.id}</p>
           <p className="text-sm text-gray-500">
             Created {formatCreatedAt(ticket.created_at)}
           </p>
