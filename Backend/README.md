@@ -60,7 +60,9 @@ Tests are located in the /tests folder and use pytest. To execute:
 
 python -m pytest tests/
 
-📊 Code coverage: ~84%
+📊 Code coverage: ~81%
+
+![Test coverage](assets/test_cov_img.png)
 
 ⸻
 
