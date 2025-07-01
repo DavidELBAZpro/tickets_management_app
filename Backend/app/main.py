@@ -15,9 +15,9 @@ import settings as app_settings
 from database import create_db_and_tables
 from routers.default import router as default_router
 from routers.ticket import router as ticket_router
-application = FastAPI()
-application.include_router(default_router)
-application.include_router(ticket_router)
+app = FastAPI()
+app.include_router(default_router)
+app.include_router(ticket_router)
 
 
 def configure_logging(console_handler: bool = False):
@@ -46,7 +46,7 @@ def configure_logging(console_handler: bool = False):
 
 
 def setup_app():
-    """Function's goal is to set up the prerequisites before starting the application.
+    """Function's goal is to set up the prerequisites before starting the app.
 
     Returns:
         None:
@@ -57,4 +57,4 @@ def setup_app():
 
 if __name__ == "__main__":
     setup_app()
-    uvicorn.run(application, port=8000, host="0.0.0.0")
+    uvicorn.run(app, port=8000, host="0.0.0.0")
