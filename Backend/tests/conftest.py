@@ -15,7 +15,7 @@ parent_dir = os.path.dirname(current_dir)
 # Add parent directory to sys.path so that no import errors occur when pytest is run from the terminal
 sys.path.insert(0, os.path.join(parent_dir, "app"))
 
-from app.main import application
+from app.main import app
 from app.database import get_session
 
 
@@ -37,7 +37,7 @@ def client_fixture(session: Session):
     def override_get_session():
         return session
 
-    application.dependency_overrides[get_session] = override_get_session
-    client = TestClient(application)
+    app.dependency_overrides[get_session] = override_get_session
+    client = TestClient(app)
     yield client
-    application.dependency_overrides.clear()
+    app.dependency_overrides.clear()
