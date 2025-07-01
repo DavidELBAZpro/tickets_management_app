@@ -4,21 +4,40 @@ This project is a lightweight, modern backend for a ticket management applicatio
 
 ⸻
 
-📁 Project Layout
-
- tickets_management_backend/
- ├── app/
- │   ├── main.py             # App entry point, FastAPI initialization
- │   ├── database.py         # Database config & session management
- │   ├── models/              # SQLModel data models
- │   ├── schemas/             # Pydantic validation schemas
- │   ├── routers/endpoints/   # API route definitions
- │   ├── crud/                # Business logic / DB interactions
- │   └── settings.py         # Config & environment
- ├── tests/                 # Unit tests (pytest)
- ├── requirements.txt        # Python package requirements
- ├── .env                    # Environment variables
- └── README.md               # You're reading it 😉
+## 📁 Project structure
+```scss
+Backend/
+│
+├── assets/
+│
+├── app/
+│   ├── __init__.py
+│   ├── main.py                # FastAPI app initialization and main routes
+│   ├── database.py            # Database setup and session management
+│   ├── models/                # SQLModel models
+│   │   ├── __init__.py
+│   │   └── ticket.py          # Ticket model
+│   ├── schemas/               # Pydantic schemas for data validation
+│   │   ├── __init__.py
+│   │   └── ticket.py          # Ticket schemas
+│   ├── routers/               # API endpoints
+│   │   ├── __init__.py
+│   │   └── endpoints/
+│   │       ├── __init__.py
+│   │       └── ticket.py      # Ticket endpoints
+│   ├── crud/                  # CRUD operations mainly
+│   │   ├── __init__.py
+│   │   └── ticket.py          # Ticket CRUD operations
+│   └── settings.py            # Configuration settings
+│
+├── tests/                     # Test files
+│   ├── __init__.py
+│   └── test_ticket.py         # Different Test cases for ticket API endpoints
+│
+├── requirements.txt           # Python dependencies
+├── README.md                  # Project documentation
+└── .env                       # Environment variables
+```
 
 
 ⸻
