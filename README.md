@@ -8,7 +8,7 @@ This app allows you to create, manage, and monitor tickets with a clean UI and a
 | Part        | URL                                                                                                                   |
 | ----------- | --------------------------------------------------------------------------------------------------------------------- |
 | 💻 Frontend | [tickets-management-app.vercel.app](https://tickets-management-app-mi1i-o0sprmpl7-davidelbazpros-projects.vercel.app) |
-| ⚙️ Backend  | [tickets-management-app-backend.onrender.com](https://tickets-management-app-backend.onrender.com)                    |
+| ⚙️ Backend  | [tickets-management-app-backend.onrender.com](https://tickets-management-app-backend.onrender.com/docs)                    |
 
 ---
 
