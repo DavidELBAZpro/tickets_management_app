@@ -1,4 +1,4 @@
-🎟️ Ticket Management Backend – FastAPI + SQLModel
+# 🎟️ Ticket Management Backend – FastAPI + SQLModel
 
 This project is a lightweight, modern backend for a ticket management application, built with FastAPI and SQLModel 🚀. It provides RESTful endpoints to create, read, update, and delete support tickets, while ensuring clean architecture, type safety, and maintainability. Ideal for bootstrapping professional-grade FastAPI apps in minutes.
 
@@ -42,7 +42,7 @@ Backend/
 
 ⸻
 
-📦 Dependency Management with uv (Recommended)
+## 📦 Dependency Management with uv (Recommended)
 
 The project is designed to work with uv – a fast Python package manager for modern workflows.
 
@@ -56,7 +56,7 @@ Step	Command
 
 ⸻
 
-💡 Alternative: Use venv + pip
+## 💡 Alternative: Use venv + pip
 
 Step	Command
 1. Create venv	python -m venv .venv
@@ -67,13 +67,13 @@ Step	Command
 
 ⸻
 
-🗄️ Database Handling with SQLModel
+## 🗄️ Database Handling with SQLModel
 
 All database operations are handled using SQLModel, which combines the simplicity of Pydantic with the power of SQLAlchemy. Read more here 👉 https://sqlmodel.tiangolo.com
 
 ⸻
 
-🧪 Running Tests (Pytest)
+## 🧪 Running Tests (Pytest)
 
 Tests are located in the /tests folder and use pytest. To execute:
 
@@ -85,7 +85,7 @@ python -m pytest tests/
 
 ⸻
 
-🐳 Run with Docker
+##  🐳 Run with Docker
 
 Step-by-step guide:
 
@@ -97,7 +97,7 @@ Once running, visit: http://localhost:8000
 
 ⸻
 
-📜 Logs
+## 📜 Logs
 
 Logs are stored in tickets_management_backend/logs/*.log. Check here if something goes wrong 🧐
 
